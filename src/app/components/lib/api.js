@@ -3,11 +3,12 @@ import testTasks from './testdata';
 
 export const fetchTasks = async (setTasks) => {
   try {
-    const response = await fetch('http://localhost:8080/tasks');
-    const data = await response.json();
-    setTasks(data);
-  } catch (error) {
+    // const response = await fetch('http://localhost:8080/tasks');
+    // const data = await response.json();
+    // setTasks(data);
     setTasks(testTasks);
+  } catch (error) {
+    
   }
 };
 
