@@ -28,9 +28,9 @@ export default function ToDoList() {
   useEffect(() => {
     fetchTasks(setTasks);
     const filteredTasks = sortData(tasks, sortBy, priorityFilter);
-    setPendingTasks(filteredTasks.filter(task => task.status === "PENDING"));
-    setInProgressTasks(filteredTasks.filter(task => task.status === "IN_PROGRESS"));
-    setCompletedTasks(filteredTasks.filter(task => task.status === "COMPLETED"));
+    setPendingTasks(filteredTasks.filter(task => task.status === "Pending"));
+    setInProgressTasks(filteredTasks.filter(task => task.status === "In Progress"));
+    setCompletedTasks(filteredTasks.filter(task => task.status === "Completed"));
   }, [tasks, sortBy, priorityFilter]);
 
   // Handlers
